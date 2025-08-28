@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora IMC</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="data">
+			<div class="form">
+				<form id="formIMC">
+					<div class="row">
+						<label>Altura:</label>
+						<input type="text" id="altura" placeholder="Digite sua altura (em metros)" />
+					</div>
+					<div class="row">
+						<label>Peso:</label>
+						<input type="text" id="peso" placeholder="Digite seu peso (em kg)" />
+					</div>
+					<div class="row">
+						<button type="submit" id="calcular">Calcular IMC</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="data">
+			<p>Seu IMC &eacute;: <span id="imc"></span></p>
+		</div>
+	</div>
+	<h2>Classificação IMC</h2>
+	<table id="tabelaIMC" border="1">
+		<thead>
+			<tr>
+				<th>Classificação</th>
+				<th>Intervalo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="magreza">
+				<td>Magreza</td>
+				<td>Menor que 18.5</td>
+			</tr>
+			<tr id="normal">
+				<td>Normal</td>
+				<td>Entre 18.5 e 24.9</td>
+			</tr>
+			<tr id="sobrepeso">
+				<td>Sobrepeso</td>
+				<td>Entre 25.0 e 29.9</td>
+			</tr>
+			<tr id="obesidade">
+				<td>Obesidade</td>
+				<td>Maior ou igual a 30.0</td>
+			</tr>
+		</tbody>
+	</table>
+	<h1>Grupo:</h1>
+	<ul>
+		<li>André Luis Gnatiuc</li>
+		<li>Edimichael das Virgens de Lima</li>
+		<li>Luciano de Carvalho</li>
+		<li>Luis Henrique de Souza Cruz</li>
+		<li>Paulo Simão Barreto</li>
+		<li>Rodrigo da Silva Assimos</li>
+		<li>Vinicius Fernandes Umbelino dos Santos</li>
+		<li>Vitor Fernandes Palha</li>
+		<li>Vitor Pereira Rocha</li>
+	</ul>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
